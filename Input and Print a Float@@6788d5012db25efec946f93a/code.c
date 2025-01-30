@@ -1,15 +1,14 @@
 #include <stdio.h>
 
 int main(){
-    float num;
-    printf("Enter a floating-point number: ");
-    scanf("%f", &num);
+    float number;
 
-    if (number == 0.0f){
-        printf("you entered: 0.00\n");
-    } 
-    else {
-        printf("%f\n", num);
-}
+    printf("Enter a floating-point number: ");
+    scanf("%f", &number);
+
+    printf("You entered: %.2f", number);
+
     return 0;
-}
+}    
+
+    
