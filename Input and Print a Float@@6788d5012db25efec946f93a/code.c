@@ -8,7 +8,7 @@ int main(){
     
 
     printf("You entered: %.2f %.2f", a, b );
-    scanf("%.2f", & a,b)
+    scanf("%.2f")
 
 
     return 0;
