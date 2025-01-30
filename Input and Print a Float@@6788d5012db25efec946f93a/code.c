@@ -7,9 +7,9 @@ int main(){
 
     if (number == 0.0f){
         printf("you entered: 0.00\n");
-    } else {
+    } 
+    else {
         printf("%f\n", num);
-
-    }
+}
     return 0;
 }
