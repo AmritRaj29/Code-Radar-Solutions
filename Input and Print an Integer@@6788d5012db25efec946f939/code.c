@@ -5,6 +5,6 @@ int main(){
     printf("You entered: ");
     scanf("%d", &num);
 
-    printf("%d", num);
+    printf("%d\n", num);
     return 0;
 }
