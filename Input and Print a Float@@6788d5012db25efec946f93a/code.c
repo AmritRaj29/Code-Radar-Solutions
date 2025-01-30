@@ -1,17 +1,10 @@
 #include <stdio.h>
 
 int main(){
-    float a = 3.14;
-    float b = 0.0;
+    float num;
+    printf("You entered: ");
+    scanf("%f", &num);
 
-    
-    
-
-    printf("You entered: %.2f %.2f", a, b );
-    scanf("%.2f")
-
-
+    printf("%.2f\n", num);
     return 0;
-}    
-
-    
+}
