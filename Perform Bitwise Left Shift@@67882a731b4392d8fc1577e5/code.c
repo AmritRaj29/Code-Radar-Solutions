@@ -7,6 +7,6 @@ int main() {
     scanf("%d", &number);
     scanf("%d", &shift);
     int result = number << shift;
-    printf("Result: %d\n", result);
+    printf("%d\n", result);
     return 0;
 }
