@@ -1,6 +1,10 @@
 #include <stdio.h>
 
 void decToBinary(int n){
+    if (n == 0){
+        printf("0");
+        return;
+    }
     int binaryNum[32];
     int i = 0;
 
