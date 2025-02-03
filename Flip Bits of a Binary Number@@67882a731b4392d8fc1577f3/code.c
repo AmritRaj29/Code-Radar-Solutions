@@ -5,7 +5,7 @@
 int main() {
     int num;
     scanf("%d", &num);
-    int flipped = -num;
+    int flipped = -num-1;
     printf("%d\n", flipped);
     return 0;
 }
