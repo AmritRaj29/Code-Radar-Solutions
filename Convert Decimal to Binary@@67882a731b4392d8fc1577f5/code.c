@@ -9,7 +9,7 @@ void decToBinary(int n){
         n = n>>1;
         i++;
     }
-    for (int j = i-1; 20;){
+    for (int j = i-1; j>=0; j--){
         printf("%d", binaryNum[j]);
     }
 }
