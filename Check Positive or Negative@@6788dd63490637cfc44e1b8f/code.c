@@ -7,7 +7,7 @@ int main() {
     scanf("%d", &num);
     if(num>0){
         printf("Positive\n");
-    }elif{
+    }elif(num<0){
         printf("Zero\n");
     }else{
         printf("Negative\n");
