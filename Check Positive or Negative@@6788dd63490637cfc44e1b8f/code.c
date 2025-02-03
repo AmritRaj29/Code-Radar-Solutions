@@ -8,9 +8,9 @@ int main() {
     if(num>0){
         printf("Positive\n");
     }elif{
-        printf("Negative\n");
-    }else{
         printf("Zero\n");
+    }else{
+        printf("Negative\n");
     }
     return 0;
 }
