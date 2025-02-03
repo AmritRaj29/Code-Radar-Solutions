@@ -7,6 +7,6 @@ int main() {
     scanf("%d %d", &num,&n);
     int shifted = num << n;
     int nthBit = shifted & 1;
-    printf("%d\n" nthBit);
+    printf("%d\n",nthBit);
     return 0;
 }
