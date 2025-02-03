@@ -7,8 +7,10 @@ int main() {
     scanf("%c", &word);
     if(word >=65 && word <=98){
         printf("Uppercase\n");
-    }else{
+    }else if(word >=97 && word <=122){
         printf("Lowercase\n");
+    }else{
+        printf("Not an alphabet\n");
     }
     return 0;
 }
