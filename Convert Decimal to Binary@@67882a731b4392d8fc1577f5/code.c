@@ -19,7 +19,7 @@ void decToBinary(int n){
 int main() {
     int num;
     scanf("%d", &num);
-    
+    printf("");
     decToBinary(num);
     printf("\n");
     
