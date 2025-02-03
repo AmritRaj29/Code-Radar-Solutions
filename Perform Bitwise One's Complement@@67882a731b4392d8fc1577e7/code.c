@@ -5,8 +5,8 @@ int main() {
     int num;
     scanf("%d", &num);
 
-    int result = -num;
-    printf("%d %d\n",num, result);
+    int result = -num-1;
+    printf("%d %d\n", result);
 
     return 0;
 }
