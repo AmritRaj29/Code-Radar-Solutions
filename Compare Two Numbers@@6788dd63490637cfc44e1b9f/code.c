@@ -3,7 +3,7 @@
 
 int main() {
     int num1, num2;
-    scanf("%d", &num);
+    scanf("%d %d", &num1, &num2);
     if(num1==num2){
         printf("Equal\n");
     }else if(num1>num2){
