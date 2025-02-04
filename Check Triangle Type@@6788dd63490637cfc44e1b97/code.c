@@ -9,7 +9,7 @@ int main() {
         printf("Equilateral\n");
     }else if(num1==num2!=num3){
         printf("Isosceles\n");
-    }else{
+    }else(num1!=num2!=num3){
         printf("Scalene\n");
     }
     
