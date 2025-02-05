@@ -25,9 +25,9 @@ int main() {
         case 2: // February 
         printf("28\n");
         break;
-    }
-    }else{
+        default:
         printf("Invalid month\n");
+    }
     }
     return 0;
 }
