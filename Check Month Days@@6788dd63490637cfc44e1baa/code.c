@@ -27,7 +27,7 @@ int main() {
         break;
     }
     }else{
-        printf("Invalid month\n");
+        printf("Invalid month.\n");
     }
     return 0;
 }
