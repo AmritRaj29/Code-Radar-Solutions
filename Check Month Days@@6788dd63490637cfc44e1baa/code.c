@@ -3,7 +3,7 @@
 
 
 int main() {
-    int month =0;
+    int month = 0;
     if(month>=1 && month<=12){
     scanf("%d", &month);
     switch(month){
