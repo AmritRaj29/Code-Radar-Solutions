@@ -8,7 +8,7 @@ int main() {
     if(num1 == num2^2){
         printf("Yes\n");
     }else{
-        printf("No\n")
+        printf("No\n");
     }
     return 0;
 }
