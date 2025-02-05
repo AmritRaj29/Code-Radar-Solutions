@@ -3,7 +3,7 @@
 
 
 int main() {
-    int month = 0;
+    int month;
     if(month>=1 && month<=12){
     scanf("%d", &month);
     switch(month){
@@ -14,20 +14,20 @@ int main() {
         case 8: // August
         case 10: // october
         case 12: // december
-        printf("31\n");
-        break;
+            printf("31\n");
+            break;
         case 4: // april
         case 6: // june
         case 9: // september
         case 11: // november
-        printf("30\n");
-        break;
+            printf("30\n");
+            break;
         case 2: // February 
-        printf("28\n");
-        break;
+            printf("28\n");
+            break;
         default:
-        printf("Invalid month\n");
-        break;
+            printf("Invalid month\n");
+            break;
     }
     }
     return 0;
