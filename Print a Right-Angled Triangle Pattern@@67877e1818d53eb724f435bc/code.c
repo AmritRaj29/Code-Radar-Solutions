@@ -1,9 +1,7 @@
 #include <stdio.h>
 int main(){
-    int rows;
-    int cols;
-    int i;
-    int j;
+    int rows, cols, i, j;
+   
     scanf("%d %d", &rows, &cols);
 
     for(i = 1; i <= rows; i++){
