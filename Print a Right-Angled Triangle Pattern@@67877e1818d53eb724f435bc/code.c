@@ -2,6 +2,8 @@
 int main(){
     int rows;
     int cols;
+    int i;
+    int j;
     scanf("%d %d", &rows, &cols);
 
     for(int i = 1; i <= rows; i++){
