@@ -1,4 +1,5 @@
 // Your code here...
+#include <stdio.h>
 void trackPlayerRanks(int ranked[], int n, int player[], int m, int result[]){
     
     for (int i = 0; i < m; i++){
@@ -15,7 +16,7 @@ void trackPlayerRanks(int ranked[], int n, int player[], int m, int result[]){
     }
 }
 int main() {
-    
+
     int n,m;
     scanf("%d", &n);
     int ranked[200000];
