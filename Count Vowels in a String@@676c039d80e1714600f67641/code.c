@@ -9,7 +9,7 @@ int main(){
     scanf(str, sizeof(str), stdin);
     str[strcspn(str, "\n")] = 0;
     for (i = 0; str[i] != '\0'; i++){
-        char currentChar = tolower(sr[i]);
+        char currentChar = tolower(str[i]);
         if (currentChar == 'a' || currentChar == 'e' || currentChar == 'i' || currentChar == 'o' || currentChar == 'u'){
             count++;
         }
