@@ -8,7 +8,7 @@ void trackPlayerRanks(int ranked[], int n, int player[], int m, int result[]){
             j++;
         }
         while (j < n && ranked[j] == player[i]){
-            j++
+            j++;
         }
         result[i] = rank;
     }
