@@ -14,7 +14,7 @@ void trackPlayerRanks(int ranked[], int n, int player[], int m, int result[]){
         result[i] = rank;
     }
 }
-int main(){
+int main() {
     int n,m;
     scanf("%d", &n);
     int ranked[200000];
