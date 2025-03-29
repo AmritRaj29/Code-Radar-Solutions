@@ -10,7 +10,7 @@ int main(){
     str[strcspn(str, "\n")] = 0;
     for (i = 0; str[i] != '\0'; i++){
         char currentChar = tolower(str[i]);
-        if (currentChar == 'a' || currentChar == 'e' || currentChar == 'i' || currentChar == 'o' || currentChar == 'u'){
+        if (currentChar == 'a' || currentChar == 'e' || currentChar == 'i' || currentChar == 'o' || currentChar == 'u' && currentChar == 'A' || currentChar == 'E' || currentChar == 'I' || currentChar == 'O' || currentChar == 'U'){
             count++;
         }
     }
