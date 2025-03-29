@@ -6,12 +6,11 @@ int main(){
     char str[100];
     int count = 0;
     int i;
-    scanf("%s", str);
-    str[strcspn(str, "\n")] = 0;
+    scanf("%99s", str);
+    
     for (i = 0; str[i] != '\0'; i++){
         char currentChar = tolower(str[i]);
-        if (currentChar == 'a' || currentChar == 'e' || currentChar == 'i' || currentChar == 'o' || currentChar == 'u' && currentChar == 'A' || currentChar == 'E' || currentChar == 'I' || currentChar == 'O' || currentChar == 'U'){
-            count++;
+        if (currentChar == 'a' || currentChar == 'e' || currentChar == 'i' || currentChar == 'o' || currentChar == 'u' ){
         }
     }
     printf("%d\n", count);
