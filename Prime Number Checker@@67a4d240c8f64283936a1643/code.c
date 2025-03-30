@@ -1,5 +1,5 @@
 // Your code here...
-
+#include<math.h>
 
 int isPrime(int n) {
     if (n <= 1) return 0;
