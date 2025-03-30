@@ -1,27 +1,19 @@
 #include <stdio.h>
-int main() {
-    int n,i;
-    int f = 0, s = 1, next;
-    scanf("%d", &n);
-    if (n <= 0) {
-        printf("Invalid input\n");
-        return 1;
-    }
-    if (n==1) {
-        printf("0\n");
-        return 0;
 
-    }
-    if (n==2) {
-        printf("0 1\n");
-        return 0;
-    }
-    printf("0 1");
-    for (i = 3; i <=n ; i++){
-        next = f + s;
-        printf("%d", next);
-        f = s;
-        s = next;
+int fibonacciSeries(int n);
+int main() {
+    int n;
+    printf("%d", n);
+    fibonacciSeries(n);
+    return 0;
+}
+int fibonacciSeries(int n){
+    int f=0, s=1, next;
+    for (int i = 0; i<n; i++){
+        printf("%d", f);
+        next = f+s;
+        f=s;
+        s=next;
     }
     printf("\n");
     return 0;
