@@ -9,6 +9,6 @@ int main() {
     // Calculate the sum using the formula
     sum = (n * (n + 1)) / 2;
 
-    printf("The sum of the first %d natural numbers is: %d\n", n, sum);
+    printf("%d", n, sum);
     return 0;
 }
