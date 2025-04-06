@@ -8,7 +8,7 @@ int main() {
 
     for (i = 1; i <= rows; i++) {         // Loop for rows
         for (j = 1; j <= i; j++) {        // Loop for numbers
-            printf("%d",  j);              // Print the current number
+            printf(" %d", j);              // Print the current number
         }
         printf("\n");                     // New line after each row
     }
