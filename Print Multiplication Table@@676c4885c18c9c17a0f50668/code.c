@@ -2,15 +2,13 @@
 #include <stdio.h>
 
 int main() {
-    int i, j;
+    int n, i;
 
     
+    scanf("%d", &n);
 
-    for (i = 1; i <= 10; i++) {         // Loop for rows (numbers 1 to 10)
-        for (j = 1; j <= 10; j++) {     // Loop for columns (multiplier 1 to 10)
-            printf("%d x %d = %d\n", i, j, i * j); // Print product in the desired format
-        }
-        printf("\n");                   // Blank line for separation between tables
+    for (i = 1; i <= 10; i++) {               // Loop from 1 to 10
+        printf("%d x %d = %d\n", n, i, n * i); // Print in "n x i = result" format
     }
 
     return 0;
