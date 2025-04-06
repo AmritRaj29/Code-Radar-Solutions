@@ -6,11 +6,11 @@ int main() {
 
     
 
-    for (i = 1; i <= 10; i++) {         // Loop through rows (numbers 1 to 10)
-        for (j = 1; j <= 10; j++) {     // Loop through columns (multiplier 1 to 10)
-            printf("%4d", i * j);       // Print product, formatted for alignment
+    for (i = 1; i <= 10; i++) {         // Loop for rows (numbers 1 to 10)
+        for (j = 1; j <= 10; j++) {     // Loop for columns (multiplier 1 to 10)
+            printf("%d x %d = %d\n", i, j, i * j); // Print product in the desired format
         }
-        printf("\n");                   // Move to the next row
+        printf("\n");                   // Blank line for separation between tables
     }
 
     return 0;
