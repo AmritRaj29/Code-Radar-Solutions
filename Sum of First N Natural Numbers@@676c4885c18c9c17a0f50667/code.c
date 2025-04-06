@@ -9,6 +9,6 @@ int main() {
     // Calculate the sum using the formula
     sum = (n * (n + 1)) / 2;
 
-    printf("%d", n, sum);
+    printf("%d",sum);
     return 0;
 }
