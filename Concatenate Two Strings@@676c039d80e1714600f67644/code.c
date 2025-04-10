@@ -34,11 +34,11 @@ void concatenateStrings(char destination[], const char source[]) {
 int main() {
     char string1[1000], string2[1000];
 
-    printf("Enter the first string: ");
+    
     fgets(string1, sizeof(string1), stdin);
     removeNewline(string1); // Remove newline character manually
 
-    printf("Enter the second string: ");
+    
     fgets(string2, sizeof(string2), stdin);
     removeNewline(string2); // Remove newline character manually
 
