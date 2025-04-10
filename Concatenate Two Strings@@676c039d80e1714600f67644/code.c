@@ -1,27 +1,30 @@
 // Your code here...
 #include <stdio.h>
 
-void concatenateStrings(char *destination, const char *source) {
-    // Find the end of the destination string
-    while (*destination != '\0') {
-        destination++;
+void concatenateStrings(char destination[], const char source[]) {
+    int i = 0; // Index for destination string
+    int j = 0; // Index for source string
+
+    // Move to the end of the destination string
+    while (destination[i] != '\0') {
+        i++;
     }
 
     // Append each character of the source string to the destination
-    while (*source != '\0') {
-        *destination = *source;
-        destination++;
-        source++;
+    while (source[j] != '\0') {
+        destination[i] = source[j];
+        i++;
+        j++;
     }
 
     // Add the null terminator at the end
-    *destination = '\0';
+    destination[i] = '\0';
 }
 
 int main() {
     char string1[1000], string2[1000];
 
-    
+    printf("Enter the first string: ");
     fgets(string1, sizeof(string1), stdin);
     string1[strcspn(string1, "\n")] = '\0'; // Remove newline character
 
