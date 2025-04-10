@@ -17,8 +17,13 @@ int main() {
     
     fgets(text, sizeof(text), stdin);
 
-    // Remove newline character if present
-    text[strcspn(text, "\n")] = '\0';
+    // Removing newline character if present
+    for (int i = 0; text[i] != '\0'; i++) {
+        if (text[i] == '\n') {
+            text[i] = '\0';
+            break;
+        }
+    }
 
     int length = calculateLength(text);
     printf("%d\n", length);
