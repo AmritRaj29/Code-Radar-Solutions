@@ -27,7 +27,7 @@ int main() {
     char output[100]; // Ensure sufficient size for the output string
     
     remove_consonants(input, output);
-    printf("Result: %s\n", output);
+    printf("%s\n", output);
     
     return 0;
 }
