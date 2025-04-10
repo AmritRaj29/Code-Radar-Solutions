@@ -44,7 +44,7 @@ int main() {
 
     concatenateStrings(string1, string2);
 
-    printf("The concatenated string is: %s\n", string1);
+    printf("%s\n", string1);
 
     return 0;
 }
