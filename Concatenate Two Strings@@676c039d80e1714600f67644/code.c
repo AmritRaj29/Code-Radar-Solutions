@@ -1,6 +1,16 @@
 // Your code here...
 #include <stdio.h>
 
+void removeNewline(char *str) {
+    // Traverse the string and remove the newline character if present
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] == '\n') {
+            str[i] = '\0';
+            break;
+        }
+    }
+}
+
 void concatenateStrings(char destination[], const char source[]) {
     int i = 0; // Index for destination string
     int j = 0; // Index for source string
@@ -26,15 +36,15 @@ int main() {
 
     printf("Enter the first string: ");
     fgets(string1, sizeof(string1), stdin);
-    string1[strcspn(string1, "\n")] = '\0'; // Remove newline character
+    removeNewline(string1); // Remove newline character manually
 
     printf("Enter the second string: ");
     fgets(string2, sizeof(string2), stdin);
-    string2[strcspn(string2, "\n")] = '\0'; // Remove newline character
+    removeNewline(string2); // Remove newline character manually
 
     concatenateStrings(string1, string2);
 
-    printf("%s\n", string1);
+    printf("The concatenated string is: %s\n", string1);
 
     return 0;
 }
