@@ -22,12 +22,17 @@ void remove_consonants(char *input, char *output) {
     output[j] = '\0'; // Null-terminate the output string
 }
 
+#include <stdio.h>
+
 int main() {
-    char input[] = "Hello, World!";
+    char input[100];
     char output[100]; // Ensure sufficient size for the output string
+
     
+    scanf("%99s", input); // Limiting input size to prevent buffer overflow
+
     remove_consonants(input, output);
     printf("%s\n", output);
-    
+
     return 0;
 }
