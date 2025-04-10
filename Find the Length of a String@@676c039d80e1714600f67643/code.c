@@ -1,15 +1,15 @@
 // Your code here...
-
 #include <stdio.h>
 
 int calculateLength(const char *str) {
-    const char *ptr = str;
-    // Move the pointer forward until the null terminator '\0' is encountered
-    while (*ptr != '\0') {
-        ptr++;
+    int length = 0;
+
+    // Traverse each character until the null terminator '\0'
+    while (str[length] != '\0') {
+        length++;
     }
-    // The length is the difference between the final pointer position and the initial position
-    return ptr - str;
+
+    return length;
 }
 
 int main() {
@@ -17,7 +17,7 @@ int main() {
     
     fgets(text, sizeof(text), stdin);
 
-    // Removing newline character if present
+    // Remove newline character if present
     text[strcspn(text, "\n")] = '\0';
 
     int length = calculateLength(text);
