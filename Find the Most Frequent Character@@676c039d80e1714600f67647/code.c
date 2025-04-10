@@ -2,18 +2,23 @@
 #include <stdio.h>
 
 void findMostFrequentCharacter(const char *str) {
-    int frequency[256] = {0}; // Array to store frequencies of all characters
     int maxFreq = 0;
     char mostFrequentChar = '\0';
 
-    // Traverse the string and calculate frequency
+    // Outer loop to consider each character in the string
     for (int i = 0; str[i] != '\0'; i++) {
-        // Increment frequency count for the character
-        frequency[(int)str[i]]++;
+        int freq = 0;
 
-        // Update most frequent character if its count is the highest
-        if (frequency[(int)str[i]] > maxFreq) {
-            maxFreq = frequency[(int)str[i]];
+        // Inner loop to count occurrences of str[i]
+        for (int j = 0; str[j] != '\0'; j++) {
+            if (str[i] == str[j]) {
+                freq++;
+            }
+        }
+
+        // Update most frequent character if higher frequency is found
+        if (freq > maxFreq) {
+            maxFreq = freq;
             mostFrequentChar = str[i];
         }
     }
