@@ -21,14 +21,14 @@ int countWords(const char *str) {
 
 int main() {
     char text[1000];
-    printf("Enter a string: ");
+    
     fgets(text, sizeof(text), stdin);
 
     // Removing newline character if present
     text[strcspn(text, "\n")] = '\0';
 
     int wordCount = countWords(text);
-    printf("The number of words in the string is: %d\n", wordCount);
+    printf("%d\n", wordCount);
 
     return 0;
 }
