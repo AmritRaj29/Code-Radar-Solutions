@@ -25,13 +25,8 @@ int main() {
         }
     }
 
-    // Check if the input is empty
-    if (text[0] == '\0') {
-        printf("%d",0\n);
-    } else {
-        int length = calculateLength(text);
-        printf("%d\n", length);
-    }
+    int length = calculateLength(text);
+    printf("%d\n", length);
 
     return 0;
 }
