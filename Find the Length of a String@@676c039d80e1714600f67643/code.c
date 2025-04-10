@@ -17,16 +17,21 @@ int main() {
     
     fgets(text, sizeof(text), stdin);
 
-    // Removing newline character if present
-    for (int i = 0; text[i] != '\0'; i++) {
-        if (text[i] == '\n') {
-            text[i] = '\0';
-            break;
+    // Check if only the newline character is present (indicating empty input)
+    if (text[0] == '\n') {
+        printf("The length of the string is: 0\n");
+    } else {
+        // Remove newline character if present
+        for (int i = 0; text[i] != '\0'; i++) {
+            if (text[i] == '\n') {
+                text[i] = '\0';
+                break;
+            }
         }
-    }
 
-    int length = calculateLength(text);
-    printf("%d\n", length);
+        int length = calculateLength(text);
+        printf("%d\n", length);
+    }
 
     return 0;
 }
